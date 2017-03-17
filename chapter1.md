@@ -1,18 +1,24 @@
 # Getting Started
 
-For First time creators:
+## 
 
-Step 1:  Create a new Kriti app: https://build.kriti.ai/app/create
+## For first-time creators:
 
-Step 2: Setup connections to your AWS account and enter your S3 bucket and Lambda access credentials in the App Settings page. Click on info button on the settings page for the process, if you are new to Amazon AWS.
+**Step 1:**  Create a new Kriti app: [https://build.kriti.ai/app/create](https://build.kriti.ai/app/create)
 
-Step 3: Click on "Deploy" button to automatically setup lambda functions and auto-configure the Api gateway
+**Step 2:** Configure App Settings page
 
-Step 4: Enter your FB app's info on the same Kriti App settings page
+* Setup connections to your AWS account
+  * Enter your S3 bucket access credentials in "Content Storage Settings"
+  * Enter your AWS Lambda access credentials  in  "Code Deployment Settings"
+  * Click on "Deploy" button to automatically setup lambda functions and auto-configure the Api gateway
+  * Click on info button on the settings page for detailed instructions, if you are new to Amazon AWS
+* Enter your FB app's info on the same Kriti App settings page
 
-Step 5: 
+**Step 3:** Configure your first UX Model
 
+* Click on UX design link on the left navigation bar and click on "Create new UX Model" button. Enter the name and select "Github + AWS auto deploy" option
+* It will show up as a new UX Model panel on the same page. Click on "Github integration" and enter the access info to your project's repo
 
-
-
+Step 4: 
 
