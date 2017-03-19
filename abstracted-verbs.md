@@ -20,7 +20,7 @@ function first_step(req){
 | :--- | :--- | :--- |
 | goto | {"goto" : "step\_name"} | Moves the conversation to a specified named element or step of the UX model |
 | wait | {"wait" : 2000} | Wait time in milliseconds. Good for providing some pause between multiple chained conversational steps |
-| action | {"action" : "typing\_on"},<br/>{"action" : "typing\_off"} | Sends the 'typing on' or 'typing off' indicators to the user |
+| action | {"action" : "typing\_on"},{"action" : "typing\_off"} | Sends the 'typing on' or 'typing off' indicators to the user |
 | override\_{step\_name} | {override\_step\_name : overrideobj} | This overides the message object of the element |
 |  |  |  |
 |  |  |  |
