@@ -10,7 +10,6 @@ Kriti AI is a unique chatbot creation toolset. This provides a new set of techno
 2. Rock solid contextually aware input processing for your custom code. Enables complex use cases with massive sets of interlinked conversational steps
 3. Converts your nodejs code into highly scalable serverless Lambda functions. Real time continuous integration and continuous deployment of your nodejs code
 4. All the data files, assets, code are saved and deployed from your self-owned accounts on AWS and Github
-5. Anything you create on Kriti AI becomes a platform in itself 
 
 Note: _Please refer documentation for more details._
 
@@ -36,8 +35,4 @@ _Please refer detailed documentation from the navigation menu on this page to ge
 ### Developer Community:
 
 Join [this facebook group](https://www.facebook.com/groups/689444534571301/ "Kriti AI Creators Hub") to get access to the latest information, feature roadmap and feedback on various aspects. Ask questions and get answers directly from the Kriti AI core team as well as public contributors.
-
-
-
-
 
