@@ -1,10 +1,11 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](chapter1.md)
 * [App Architecture](app-architecture.md)
-* [Abstracted Verbs](abstracted-verbs.md)
 * [Programming Model](chapter1/programming-model.md)
+* [Getting Started](chapter1.md)
+* [Abstracted Verbs](abstracted-verbs.md)
 * [Data Storage](data-storage-model.md)
+* WARP Testing
 * Recipes
 

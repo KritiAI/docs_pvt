@@ -1,14 +1,12 @@
 # Data Storage
 
-The term used for data storage in Kriti AI is called "databag". Each user has a data store where complex objects can be stored in key/value pairs.
+Each user has a data store where complex objects can be stored in key/value pairs. The term used for data storage in Kriti AI is called "databag". 
 
 #### Usage:
 
-Access the databag via the req.databag object and add/modify the contents or key/value pairs. 
+Access the databag via the req.databag object and add/modify the contents or key/value pairs.
 
 To save this data for future access, return the modified databag as the result of the function call. If no databag parameter is returned the original databag contents remain unaltered.
-
-
 
 ```
 function step_name(req){
