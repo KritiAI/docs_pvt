@@ -17,10 +17,6 @@
   * Unlimited Facebook Pages each connected to the desired UX model
   * Unlimited users and clients with specific roles and permissions
 
-
-
-
-
 * **Each UX model is:**
 
   * Connected to a specific branch in a defined Github repo
