@@ -8,4 +8,5 @@
 * [Data Storage](data-storage-model.md)
 * [WARP Testing](warp-testing.md)
 * [Recipes](recipes.md)
+* [Support](support.md)
 
