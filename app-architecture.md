@@ -7,15 +7,15 @@
   * Single Lambda function
   * Single API gateway
 
-
-
-
-
 * **Each Kriti AI app can have:**
 
   * Unlimited UX Models and UX flows
   * Unlimited Facebook Pages each connected to the desired UX model
   * Unlimited users and clients with specific roles and permissions
+
+
+
+
 
 * **Each UX model is:**
 
