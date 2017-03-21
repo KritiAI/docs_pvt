@@ -2,11 +2,7 @@
 
 `Hello World!`
 
-
-
-Kriti AI is a unique chatbot creation toolset. This provides a new set of technologies for the innovative chatbot creators who are making conversational AI products. 
-
-
+Kriti AI is a unique chatbot creation toolset. This provides a new set of technologies for the innovative chatbot creators who are making conversational AI products.
 
 ### Key USP
 
@@ -29,7 +25,15 @@ Note: _Please refer documentation for more details._
 
 
 
+---
 
+### Start building:
+
+[https://build.kriti.ai/](https://build.kriti.ai/)
+
+_Please refer detailed documentation from the navigation menu on this page to get started!_
+
+---
 
 
 
