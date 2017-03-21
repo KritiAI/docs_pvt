@@ -6,6 +6,6 @@
 * [Getting Started](chapter1.md)
 * [Abstracted Verbs](abstracted-verbs.md)
 * [Data Storage](data-storage-model.md)
-* WARP Testing
-* Recipes
+* [WARP Testing](warp-testing.md)
+* [Recipes](recipes.md)
 

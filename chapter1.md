@@ -1,6 +1,6 @@
 # Getting Started
 
-The process requires some additional setup steps for 1st time new creators. Once you have setup your first UX coversation flow, the second one is a lot faster! 
+The process requires some additional setup steps for 1st time new creators. Once you have setup your first UX coversation flow, the second one is a lot faster!
 
 ## For first-time creators:
 
@@ -39,6 +39,18 @@ The process requires some additional setup steps for 1st time new creators. Once
    1. The custom code is modular MVC format, with each function now corresponding 1:1 with a specific step of the flow
    2. The user input is available via the passed object to the function
    3. The function responds back a simple json object to affect the flow of the conversation, via abstracted verbs
+
+---
+
+## For existing creators:
+
+You can use the same app for multiple use cases. Each app that you create is a bot making platform in itself.  Just create a new UX model and start creating. Different pages can be connected to different UX models under the same app.
+
+_Tip: you can directly start with Step 3,  as shown above. In step 4 click on "Clone from existing" if you want to initiate work with a cloned copy of an existing chatbot UX model._
+
+
+
+
 
 
 
