@@ -23,8 +23,6 @@ Note: _Please refer documentation for more details._
 3. Git integration: Github
 4. Deployment CICD integration: AWS S3, AWS Lambda, AWS API Gateway
 
-
-
 ---
 
 ### Start building:
@@ -34,6 +32,12 @@ Note: _Please refer documentation for more details._
 _Please refer detailed documentation from the navigation menu on this page to get started!_
 
 ---
+
+### Developer Community:
+
+Join [this facebook group](https://www.facebook.com/groups/689444534571301/ "Kriti AI Creators Hub") to get access to the latest information, feature roadmap and feedback on various aspects. Ask questions and get answers directly from the Kriti AI core team as well as public contributors.
+
+
 
 
 
