@@ -47,8 +47,6 @@ module.exports.welcome_logic = function(req){
 
 Note: The abstracted verbs are being sent back as an array under the key "actions" for the return object
 
-
-
 **Here is a more comprehensive example:**
 
 ```
@@ -109,8 +107,6 @@ More details about the "req" object passed to your function. It contains the typ
    }
 }
 ```
-
-
 
 ## Data Storage
 
@@ -180,8 +176,6 @@ else{  //user clicked on something
 return {"actions" : jsonobj, "databag" : req.databag};  //returning this response to the bot if not inside textinput
 }
 ```
-
-
 
 
 
