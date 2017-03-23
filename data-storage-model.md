@@ -1,6 +1,6 @@
 # Data Storage
 
-Each user has a data store where complex objects can be stored in key/value pairs. The term used for data storage in Kriti AI is called "databag". 
+Each user has a data store where complex objects can be stored in key/value pairs. The term used for data storage in Kriti AI is called "databag".
 
 #### Usage:
 

@@ -2,19 +2,18 @@
 
 The best way to get started is to create an empty repo in github, say "samplebot".
 
-Also it would be convenient to create a '[Personal Access token](https://github.com/settings/tokens)' for github, Select the scopes under "repo".   
+Also it would be convenient to create a '[Personal Access token](https://github.com/settings/tokens)' for github, Select the scopes under "repo".  
 Lets say the token is : 9e1cadee492b1f3fdfaa8f0bd5e04d79
 
 On your terminal type:
 
 ```
 git clone --branch=master https://USERNAME:9e1cadee492b1f3fdfaa8f0bd5e04d79@github.com/USERNAME/samplebot.git samplebot
-
 ```
 
 Note: replace USERNAME with your github username.
 
-This will create a folder called "samplebot" and set up git remote to the repo. 
+This will create a folder called "samplebot" and set up git remote to the repo.
 
 Now create your nodejs project by typing in your terminal:
 
@@ -41,7 +40,7 @@ Now open your index.js file in your favorite code editor and put your code in th
 module.exports.welcome_logic = function(req){
 
     var jsonobj = [];                                     //actions array
-    jsonobj.push({"kriti_goto" : "welcome_txt"});         //adding an abstracted verb action
+    jsonobj.push({"goto" : "welcome_txt"});         //adding an abstracted verb action
     return {"actions" : jsonobj};                         //returning this response to the bot 
 }
 ```
@@ -50,7 +49,7 @@ Note: The abstracted verbs are being sent back as an array under the key "action
 
 
 
-Here is a more comprehensive example:
+**Here is a more comprehensive example:**
 
 ```
 module.exports.STEP_NAME = function(req){
@@ -76,7 +75,9 @@ else if(req.fileinput.length > 0){
 }
 ```
 
+## 
 
+## The "req" object
 
 More details about the "req" object passed to your function. It contains the type of input, basic info about the fb app and fb page, user profile information, and your persistent key/value datastore named as "databag"
 
@@ -103,11 +104,86 @@ More details about the "req" object passed to your function. It contains the typ
       "picture": PROFILE_PICTURE_URL
    },
    "databag":{  
-      "key1" : "value1", 
-      "key2" : ["value2_0", "value2_1"]
+      "key1" : "value1",                        //just sample data for illustration
+      "key2" : ["value2_0", "value2_1"]         //just sample data for illustration
    }
 }
 ```
+
+
+
+## Data Storage
+
+Each user has a data store where complex objects can be stored in key/value pairs. The term used for data storage in Kriti AI is called "databag".
+
+Access the databag via the req.databag object and add/modify the contents or key/value pairs.
+
+To save this data for future access, return the modified databag as the result of the function call. If no databag parameter is returned the original databag contents remain unaltered.
+
+```
+function step_name(req){
+var jsonobj = [];
+jsonobj.push({"goto" : "main_menu"});
+
+req.databag["key3232"] = {"k1" : "v1", "k2": "v2"};
+
+return {"actions" : jsonobj, "databag" : req.databag};
+}
+```
+
+Now in subsequent function calls the databag will contain the keys and the associated data that you added in this step above.
+
+## 
+
+## Promises:
+
+Please note that when using lambda serverless deployment, you should return either the response object synchronously or return a javascript promise which will have the response object. You can choose to work with native Promises or any of the popular promise ibraries. e.g. bluebird etc
+
+here is an example of using bluebird promise. First install the bluebird library.
+
+```
+npm install -S bluebird
+```
+
+Then add references on top of your index.js file:
+
+```
+const Promise = require('bluebird');
+```
+
+Now in any of your functions you can return response object like this:
+
+```
+module.exports.STEP_NAME  = function(req){
+
+var jsonobj = [];
+
+if (req.textinput && req.textinput != ""){  //user typed somthing
+
+return get_NLP_results(req.textinput)   // assuming get_NLP_results is a function which returns a promise
+                .then(function(wht){ 
+                        if(wht != ""){
+                            jsonobj.push({"goto" : "show_search_result"});  //display "show_search_result" step
+                        }
+                        else{
+                            jsonobj.push({"goto" : "show_options"});   //show the "show_options" step
+                        }
+                })
+                .then(function(){                    
+                        return {"actions" : jsonobj}; //returning this response to the bot
+                });
+}
+else{  //user clicked on something
+    jsonobj.push({"goto" : "main_menu"});
+}
+
+return {"actions" : jsonobj, "databag" : req.databag};  //returning this response to the bot if not inside textinput
+}
+```
+
+
+
+
 
 
 
