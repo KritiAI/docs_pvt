@@ -11,7 +11,7 @@ To save this data for future access, return the modified databag as the result o
 ```
 function step_name(req){
 var jsonobj = [];
-jsonobj.push({"kriti_goto" : "main_menu"});
+jsonobj.push({"goto" : "main_menu"});
 
 req.databag["key3232"] = {"k1" : "v1", "k2": "v2"};
 
