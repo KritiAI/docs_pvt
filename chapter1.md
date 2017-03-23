@@ -42,11 +42,9 @@ The process requires some additional setup steps for 1st time new creators. Once
 
 
 
-**Here is an early DEMO video which has these steps 1 to 5 covered:**
+### Here is an early DEMO video which has these steps 1 to 5 covered:
 
 [https://www.youtube.com/watch?v=qJFC0cHMRyg](https://www.youtube.com/watch?v=qJFC0cHMRyg)
-
-
 
 ---
 
