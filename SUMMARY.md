@@ -4,9 +4,10 @@
 * [App Architecture](app-architecture.md)
 * [Programming Model](chapter1/programming-model.md)
 * [Getting Started](chapter1.md)
+  * [Writing your code](chapter1/writing-your-code.md)
+* Writing Code
 * [Abstracted Verbs](abstracted-verbs.md)
+* Writing Code
 * [Data Storage](data-storage-model.md)
 * [WARP Testing](warp-testing.md)
-* [Recipes](recipes.md)
-* [Support](support.md)
 
