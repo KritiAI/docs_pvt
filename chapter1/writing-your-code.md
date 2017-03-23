@@ -87,8 +87,6 @@ This will push the new changes to your github repo. From there the github repo w
 
 This generally takes 3 seconds to 10 seconds depending on the size of your codebase .
 
-
-
 ## The "req" object
 
 More details about the "req" object passed to your function. It contains the type of input, basic info about the fb app and fb page, user profile information, and your persistent key/value datastore named as "databag"
@@ -149,7 +147,7 @@ Now in subsequent function calls the databag will contain the keys and the assoc
 
 Please note that when using lambda serverless deployment, you should return either the response object synchronously or return a javascript promise which will have the response object. You can choose to work with native Promises or any of the popular promise ibraries. e.g. bluebird etc
 
-here is an example of using bluebird promise. First install the bluebird library.
+Here is an example of using bluebird promise. First install the bluebird library.
 
 ```
 npm install -S bluebird
