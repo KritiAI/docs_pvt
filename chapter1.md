@@ -40,6 +40,14 @@ The process requires some additional setup steps for 1st time new creators. Once
    2. The user input is available via the passed object to the function
    3. The function responds back a simple json object to affect the flow of the conversation, via abstracted verbs
 
+
+
+**Here is an early DEMO video which has these steps 1 to 5 covered:**
+
+[https://www.youtube.com/watch?v=qJFC0cHMRyg](https://www.youtube.com/watch?v=qJFC0cHMRyg)
+
+
+
 ---
 
 ## For existing creators:
@@ -47,10 +55,4 @@ The process requires some additional setup steps for 1st time new creators. Once
 You can use the same app for multiple use cases. Each app that you create is a bot making platform in itself.  Just create a new UX model and start creating. Different pages can be connected to different UX models under the same app.
 
 _Tip: you can directly start with Step 3,  as shown above. In step 4 click on "Clone from existing" if you want to initiate work with a cloned copy of an existing chatbot UX model._
-
-
-
-
-
-
 
