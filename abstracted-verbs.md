@@ -64,7 +64,7 @@ Sends the 'typing on' or 'typing off' indicators to the user.
 
 **Comments: **
 
-This overides the message object of the element.
+This overrides the message object of the element.
 
 e.g. to override the text of a normal text message in a step named "welcome\_txt", send:
 
@@ -78,6 +78,51 @@ var overrideobj = {"attachment":{ "payload":{ "text":"What do you want to do nex
 ```
 
 Similarly, any type of user step element can be modified by overriding specific parts of its json object.
+
+---
+
+# callback\_after
+
+**Usage:**
+
+```
+{"callback_after" : {
+        "callbackalias" : "anyname_for_future_reference",  //for analytics and other references
+        "afterseconds" : 60,                               //in seconds
+        "functionalias" : "step_name",                     //name of the step to be triggered
+        "payload": "your-payload-string"                   //any data to be passed to the step's function
+        }
+    }
+```
+
+**Comments:**
+
+This triggers the UX flow step after the specified time \(in seconds\). The name of the step to trigger is is passed through as "functionalias". Any data can be passed to that function by specifying the "payload" string. This is passed to the function under the req.textinput object. 
+
+---
+
+# callback\_at
+
+**Usage:**
+
+```
+{"kriti_callback_at" : {
+        "callbackalias" : "anyname_for_future_reference",  //for analytics and other references
+        "at" : "2017-05-10T13:19:11Z",         //ISO datetime string can have timezone offset as well: 2017-05-10T13:19:11-05:30, or 2017-05-10T13:19:11Z
+        "timezoneoffset" : req.user.timezone,  //(optional) this will ensure that the time is calculated as per user's timezone
+        "functionalias" : "step_name",         //name of the step to be triggered
+        "payload": "your-payload-string"       //any data to be passed to the step's function
+        }
+    }
+```
+
+**Comments:**
+
+This triggers the UX flow step at the specified datetime. 
+
+Tip: If you want to trigger the callback at the user's timezone, just send the global variable req.user.timezone under "timezoneoffset". 
+
+The name of the step to trigger is is passed through as "functionalias". Any data can be passed to that function by specifying the "payload" string. This is passed to the function under the req.textinput object. 
 
 ---
 
