@@ -36,3 +36,5 @@ _Please refer detailed documentation from the navigation menu on this page to ge
 
 Join [this facebook group](https://www.facebook.com/groups/689444534571301/ "Kriti AI Creators Hub") to get access to the latest information, feature roadmap and feedback on various aspects. Ask questions and get answers directly from the Kriti AI core team as well as public contributors.
 
+For queries: support\[at\]kriti.ai
+
