@@ -24,9 +24,9 @@ npm init
 
 This will take you through the node js project creation steps.
 
-Note 1: The project name and the REPO name SHOULD BE the same i.e. "samplebot" in this case.
+**Note 1: The project name and the REPO name SHOULD BE the same i.e. "samplebot" in this case.**
 
-Note 2: The main script name SHOULD NOT be same as the repo name. Use any other name e.g. app.js, index.js or anything but  the repo name \(samplebot.js in this case\)
+**Note 2: The main script name SHOULD NOT be same as the repo name. **Use any other name e.g. app.js, index.js or anything but  the repo name \(samplebot.js in this case\)
 
 Lets create your main script, assuming you selected "index.js" when doing npm init:
 
@@ -73,7 +73,15 @@ else if(req.fileinput.length > 0){
 }
 ```
 
-## 
+## Deploying your code
+
+If you have enabled the github auto deployment option in your UX model settings and setup the kriti AI provided webhook under your repo's settings, then the deployment process is automatic all the time. 
+
+After making any change to your code files, you can run this command
+
+```
+
+```
 
 ## The "req" object
 
@@ -176,8 +184,6 @@ else{  //user clicked on something
 return {"actions" : jsonobj, "databag" : req.databag};  //returning this response to the bot if not inside textinput
 }
 ```
-
-
 
 # Support and Community access
 
