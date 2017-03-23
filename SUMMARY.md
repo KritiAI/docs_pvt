@@ -6,7 +6,6 @@
 * [Getting Started](chapter1.md)
   * [Writing your code](chapter1/writing-your-code.md)
 * [Abstracted Verbs](abstracted-verbs.md)
-* Writing Code
 * [Data Storage](data-storage-model.md)
 * [WARP Testing](warp-testing.md)
 * [Support](support.md)
