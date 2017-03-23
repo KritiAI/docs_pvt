@@ -75,13 +75,15 @@ else if(req.fileinput.length > 0){
 
 ## Deploying your code
 
-If you have enabled the github auto deployment option in your UX model settings and setup the kriti AI provided webhook under your repo's settings, then the deployment process is automatic all the time. 
+If you have enabled the github auto deployment option in your UX model settings and setup the kriti AI provided webhook under your repo's settings, then the deployment process is automatic all the time.
 
 After making any change to your code files, you can run this command
 
 ```
-
+git add -A && git commit -a -m "description of your new changes" && git push origin master
 ```
+
+This will push the new changes to your github repo. From there the github repo will inform the Kriti AI engine via the webhook about the new code pushed into the repo. The Kriti AI automated Continuous Integration and Continuous Deployment engine will run a basic sanity check of your code and deploy it as a new aliased version of the lambda function and make necessary changes behind the scenes. This generally takes 3 seconds to 10 seconds depending on the size of your code.
 
 ## The "req" object
 
