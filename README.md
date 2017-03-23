@@ -6,6 +6,8 @@ The overall architecture reduces the learning curve for developers programming t
 
 The production times are 4x to 10x faster, and it gives the power to create chatbots which are 10x to 100x more complex and intelligent than those created by existing early first generation platforms.
 
+Our early partners have created innovative conversational products in record time and of course,  we are partnering in building one of the largest AI deployment in an Enterprise environment. 
+
 ### Key USP
 
 1. MVC model: Clear separation of UX design, copywriting and programming 
