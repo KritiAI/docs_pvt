@@ -1,8 +1,8 @@
 # Kriti AI Introduction
 
-Kriti AI is the new 2nd generation of chatbot creation platforms. It provides a new set of technologies for the innovative chatbot creators who are making conversational AI products. 
+Kriti AI is the cutting edge 2nd generation chatbot creation platform. It provides a new set of technologies for the innovative chatbot creators who are making conversational AI products.
 
-The overall architecture reduces the learning curve for developers programming the conversational chatbots. 
+The overall architecture reduces the learning curve for developers programming the conversational chatbots.
 
 The production times are 4x to 10x faster, and it gives the power to create chatbots which are 10x to 100x more complex and intelligent than those created by existing early first generation platforms.
 
